@@ -1,0 +1,227 @@
+//max-width:1200px
+//section_3
+//skill container last child center
+// @media screen and (max-width:1200px) {
+//     #section_3 {
+//         .skill_last_card_box {
+//             position: relative;
+//             left: 110%;
+//         }
+//     }
+// }
+
+//section_3
+// @media screen and (max-width:992px) {
+//     #section_3 {
+//         .skill_last_card_box {
+//             left: 0;
+//         }
+//     }
+// }
+
+// max-width:767px
+// section_1
+@media screen and (max-width:767px) {
+
+    .header_container {
+
+        .main-menu_icon {
+            position: absolute;
+            right: 1%;
+            display: block !important;
+            transition: $trans2;
+
+            &:hover {
+                color: white !important;
+                transition: $trans2;
+
+            }
+
+            &:active {
+                color: rgba(199, 198, 198, 0.904) !important;
+                transition: none;
+            }
+        }
+
+        .navbar_links {
+            position: absolute;
+            top: 70%;
+            left: 130%;
+            // top: -150%;
+            opacity: 0;
+            height: 17rem;
+            width: 100%;
+            background-color: black;
+            flex-direction: column;
+            z-index: 99;
+            transition: all 1.7s ease;
+
+            .nav_link {
+                font-size: large;
+                padding: .5rem 1rem !important;
+                margin: .1rem;
+                z-index: 99;
+
+                // background-color: pink;
+
+                & a {
+                    color: white !important;
+                    // background-color: yellow;
+                    padding: .36rem 2.5rem !important;
+                    text-shadow: none;
+                    z-index: 99;
+
+                    &:hover {
+                        color: black !important;
+                        text-shadow: none !important;
+                        background-color: white;
+                    }
+
+                    &::after {
+                        background-color: black !important;
+                    }
+
+                    &:active {
+                        // background-color: aqua !important;
+                        background-color: rgba(202, 202, 202, 0.932) !important;
+
+                    }
+                }
+            }
+        }
+
+        .main_menu_btn:checked~.navbar_links {
+            left: 0%;
+            // top: 75%;
+            opacity: 1;
+            z-index: 99;
+            transition: all .8s ease-out;
+        }
+    }
+}
+
+// section_2
+@media screen and (max-width:767px) {
+    #section_2 {
+        // height: 90rem !important;
+        height: 100%;
+
+        .grid-about {
+            margin-top: 2rem !important;
+            position: relative;
+            height: 100% !important;
+            // background-color: red;
+        }
+
+        .img-box {
+            height: 24rem !important;
+            justify-content: center !important;
+            align-items: flex-end !important;
+            // background-color: yellow;
+            padding: 1rem 0;
+
+            .center-img {
+                height: 100% !important;
+                width: 38vw !important;
+                z-index: 2;
+
+                &:hover {
+                    transform: scale(1.14, 1.14);
+                }
+            }
+        }
+
+        .text-box {
+            height: 100% !important;
+
+            & p {
+                margin: 3rem 0 0 0 !important;
+                padding: 0 !important;
+                font-size: medium !important;
+            }
+        }
+    }
+}
+
+// section_3
+@media screen and (max-width:767px) {
+    #section_3 {
+
+        height: 295rem !important;
+
+        .skill-container {
+
+            // background-color: yellow;
+            // height: 300rem !important;
+            .row-height-skills {
+                height: 68rem !important;
+            }
+        }
+    }
+}
+
+// section_5
+@media screen and (max-width:767px) {
+    #section_5 {
+        height: 100rem !important;
+
+        .contact-container_box-height {
+            // background-color: yellow;
+            height: 60rem !important;
+
+            .contact-flex_box-resume {
+                justify-content: center !important;
+
+
+            }
+
+            .contact-flex_box-mail {
+                justify-content: center !important;
+            }
+
+            .contact-box-btn {
+                // background-color: yellow ;
+                margin-bottom: .8rem !important;
+                height: 5rem;
+
+                & a {
+                    padding: .4rem 5rem !important;
+                    // background-color: black;
+                }
+            }
+        }
+    }
+}
+
+
+// max-width:630px
+// section_2
+@media screen and (max-width:630px){
+    #section_2{
+
+        .text-box{  
+            
+            & p{
+                font-size: medium !important;
+                padding: .5rem;
+            }
+        }
+    }
+}
+
+//section_3
+@media screen and (max-width:576px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    #section_3{
+        height: 550rem !important;
+        // background-color: yellow;
+
+        .row-height-skills{
+            height: 550rem !important;
+            // background-color: red;
+        }
+    }    
+}
